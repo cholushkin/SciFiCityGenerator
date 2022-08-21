@@ -1,0 +1,6 @@
+[submodule "ScifiCityGeneratorUnity/Assets/Libs/gamelib"]
+	path = ScifiCityGeneratorUnity/Assets/Libs/gamelib
+	url = ../gamelib.git
+[submodule "ScifiCityGeneratorUnity/Assets/Libs/towergenerator"]
+	path = ScifiCityGeneratorUnity/Assets/Libs/towergenerator
+	url = ../towergenerator.git
