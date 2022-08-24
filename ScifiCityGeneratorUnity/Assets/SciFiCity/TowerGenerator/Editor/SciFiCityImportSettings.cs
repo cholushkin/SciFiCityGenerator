@@ -8,7 +8,15 @@ namespace Game
     {
         static SciFiCityImportSettings()
         {
-            ChunkImportSettingsManager.RegisterChunkImportSettings("Platform", new ChunkImportSettings { ChunksOutputPath = "Assets/SciFiCity/Chunks/!Prefabs", AddColliders = false, IsPack = false, EnableChunkGeneration = false});
+            ChunkImportSettingsManager.RegisterChunkImportSettings(
+                "Platform", 
+                new ChunkImportSettings
+                {
+                    ChunksOutputPath = "Assets/SciFiCity/Chunks/!Prefabs", 
+                    AddColliders = false, 
+                    IsPack = false, 
+                    EnableImport = false
+                });
         }
     }
 }
