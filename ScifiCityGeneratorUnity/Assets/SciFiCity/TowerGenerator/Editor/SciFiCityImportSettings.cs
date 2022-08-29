@@ -12,10 +12,12 @@ namespace Game
                 "Platform", 
                 new ChunkImportSettings
                 {
-                    ChunksOutputPath = "Assets/SciFiCity/Chunks/!Prefabs", 
+                    //ChunksOutputPath = "Assets/SciFiCity/Chunks/!Prefabs",
+                    //MetasOutputPath
                     AddColliders = false, 
                     IsPack = false, 
-                    EnableImport = false
+                    EnableImport = true,
+                    EnableMetaGeneration = true
                 });
         }
     }
