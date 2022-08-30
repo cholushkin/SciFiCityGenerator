@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741369d3a04597340a175cc533e9341c, type: 3}
+  m_Name: ChunkImportSource
+  m_EditorClassIdentifier: 
+  FbxNameStartFrom: ChunkCity
+  EnableMetaGeneration: 1
+  IsPack: 0
+  EnableImport: 1
+  EnableCleanupFbxRoot: 0
+  AddColliders: 1
+  ApplyMaterials: 0
+  Scale: 1
+  ImportedMetas:
+  - Assets/SciFiCity/TowerGenerator/Chunks/Metas/ChunkCity.000.cmeta.asset
+  ImportedChunks:
+  - Assets/SciFiCity/TowerGenerator/Chunks/Prefabs\ChunkCity.000.prefab
+  _metasOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Metas
+  _chunksOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Prefabs
