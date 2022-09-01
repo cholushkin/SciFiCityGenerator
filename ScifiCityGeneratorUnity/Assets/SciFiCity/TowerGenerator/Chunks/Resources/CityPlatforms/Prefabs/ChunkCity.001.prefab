@@ -5896,6 +5896,7 @@ GameObject:
   - component: {fileID: 2782738911534338141}
   - component: {fileID: 4561229940386377357}
   - component: {fileID: 820648176500737442}
+  - component: {fileID: 6367854148903182919}
   - component: {fileID: 9152352821925516877}
   m_Layer: 0
   m_Name: Tower.006
@@ -5984,6 +5985,19 @@ MonoBehaviour:
   ChunkController: {fileID: 368713475454532487}
   InductionLabels:
   - Bridge
+--- !u!114 &6367854148903182919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404650060743239602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6456f531441b9d44c9c48f30575cfd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChunkController: {fileID: 368713475454532487}
 --- !u!64 &9152352821925516877
 MeshCollider:
   m_ObjectHideFlags: 0

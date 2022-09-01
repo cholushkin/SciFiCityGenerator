@@ -183,7 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 4351214978059206277}
-  Duration: 1
+  AdjustDuration: 1
+  SizeMultiplier: 1
 --- !u!1 &4351214978235392694
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4351214978235392694}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20.03, y: 0, z: 0}
+  m_LocalPosition: {x: -30, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -273,7 +274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 4351214978235392696}
-  Duration: 1
+  AdjustDuration: 1
+  SizeMultiplier: 0.75
 --- !u!1 &4351214978685320535
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +288,7 @@ GameObject:
   - component: {fileID: 4351214978685320537}
   - component: {fileID: 4351214978685320538}
   m_Layer: 0
-  m_Name: Stage
+  m_Name: Stage.CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4351214978932851907}
   m_LocalRotation: {x: 0, y: 0.97629607, z: -0.2164396, w: 0}
-  m_LocalPosition: {x: 0.09, y: 35, z: 70.4}
+  m_LocalPosition: {x: 0.09, y: 29.8, z: 43.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -401,7 +403,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 100
-  field of view: 60
+  field of view: 49
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

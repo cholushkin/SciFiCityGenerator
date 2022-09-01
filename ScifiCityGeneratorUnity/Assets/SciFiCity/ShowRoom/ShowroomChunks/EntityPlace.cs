@@ -9,6 +9,7 @@ namespace TowerGenerator
         private GameObject _current;
         private ChunkControllerBase _chunkController;
         public CameraEntShowroomController CameraEntShowroomController;
+        public float AppearingEffectDuration;
 
         public void Place(MetaBase metaToPlace, IPseudoRandomNumberGeneratorState seed)
         {
@@ -18,8 +19,7 @@ namespace TowerGenerator
             // spawn new
             _current = ChunkFactory.CreateChunkRnd(metaToPlace, seed, transform, transform.position);
             CameraEntShowroomController.FitView(_current);
-            //_current.transform.localScale = Vector3.zero;
-            //_current.transform.DOScale(100f, 1f).SetEase(Ease.OutElastic);
+            _current.transform.DOScale(1.5f, AppearingEffectDuration).SetEase(Ease.OutElastic).From();
             _chunkController = _current.GetComponent<ChunkControllerBase>();
 
         }
