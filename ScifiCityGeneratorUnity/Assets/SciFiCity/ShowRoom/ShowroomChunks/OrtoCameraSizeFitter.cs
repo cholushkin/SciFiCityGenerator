@@ -18,9 +18,9 @@ namespace TowerGenerator
             SizeMultiplier = 1f;
         }
 
-        public void DoFit(GameObject gameObj)
+        public void DoFit(GameObject gameObj, MetaBase meta)
         {
-            var bbs = gameObj.BoundBox().size;
+            var bbs = meta.AABB;
             var maxDimension = Mathf.Max(Mathf.Max(bbs.x, bbs.y), bbs.z);
             Camera.DOOrthoSize(maxDimension * SizeMultiplier, AdjustDuration);
         }

@@ -13,7 +13,6 @@ namespace TowerGenerator
         public EntityPlace EntityPlace;
         public float Delay;
         private int _currentIndex;
-        private IPseudoRandomNumberGenerator _rnd = RandomHelper.CreateRandomNumberGenerator();
 
         void Start()
         {
@@ -26,12 +25,8 @@ namespace TowerGenerator
             while (true)
             {
                 var nextMetaToShow = GetNextMeta();
-                var rndState = _rnd.GetState();
                 Assert.IsNotNull(nextMetaToShow);
-                Debug.Log($"Seed&Meta: {rndState.AsNumber()} {nextMetaToShow.ChunkName}");
-
-                EntityPlace.Place(nextMetaToShow, rndState);
-                _rnd.Next();
+                EntityPlace.Place(nextMetaToShow);
                 yield return new WaitForSeconds(Delay);
 
             }
