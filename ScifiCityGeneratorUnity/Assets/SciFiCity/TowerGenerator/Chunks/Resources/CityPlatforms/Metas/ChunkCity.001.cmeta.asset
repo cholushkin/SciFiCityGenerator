@@ -20,5 +20,4 @@ MonoBehaviour:
   ChunkMargin: 1
   AABB: {x: 25.94334, y: 53.998386, z: 25.75615}
   OBB: {x: 0, y: 0, z: 0}
-  ChunkPath: 
-  MetaPath: 
+  ImportSource: {fileID: 11400000, guid: aeee235bad558734a8aacee23e3c5e5e, type: 2}

@@ -20,9 +20,5 @@ MonoBehaviour:
   AddColliders: 1
   ApplyMaterials: 0
   Scale: 1
-  ImportedMetas:
-  - Assets/SciFiCity/TowerGenerator/Chunks/Metas/ChunkCity.000.cmeta.asset
-  ImportedChunks:
-  - Assets/SciFiCity/TowerGenerator/Chunks/Prefabs\ChunkCity.000.prefab
-  _metasOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Metas
-  _chunksOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Prefabs
+  _metasOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Resources/CityPlatforms/Metas
+  _chunksOutputPath: Assets/SciFiCity/TowerGenerator/Chunks/Resources/CityPlatforms/Prefabs
