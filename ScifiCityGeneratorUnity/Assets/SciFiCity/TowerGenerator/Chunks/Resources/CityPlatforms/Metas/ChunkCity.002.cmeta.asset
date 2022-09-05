@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ddf9bedf788d3a4eb5433335f7ff256, type: 3}
+  m_Name: ChunkCity.002.cmeta
+  m_EditorClassIdentifier: 
+  ChunkName: ChunkCity.002
+  ChunkControllerType: 1
+  TagSet:
+    Tags: []
+  Generation: 0
+  ChunkMargin: 1
+  AABB: {x: 25.012606, y: 61.748474, z: 25.253239}
+  OBB: {x: 0, y: 0, z: 0}
+  ImportSource: {fileID: 11400000, guid: aeee235bad558734a8aacee23e3c5e5e, type: 2}
