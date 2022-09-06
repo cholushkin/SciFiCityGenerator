@@ -130,22 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1914344001430901492, guid: f6c4914c9a2f2004a9217d18abb1325f, type: 3}
-      propertyPath: PopulateOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1914344001430901499, guid: f6c4914c9a2f2004a9217d18abb1325f, type: 3}
-      propertyPath: PopulateOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1914344001430901499, guid: f6c4914c9a2f2004a9217d18abb1325f, type: 3}
-      propertyPath: FoundMetas.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1914344001430901499, guid: f6c4914c9a2f2004a9217d18abb1325f, type: 3}
       propertyPath: FoundMetas.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 7fe62763915b6e6409b94dfe5801a936, type: 2}
     - target: {fileID: 1914344001554616676, guid: f6c4914c9a2f2004a9217d18abb1325f, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -272,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351214978685320537, guid: 1a88b4f3de493c043902f864d0a7835a, type: 3}
       propertyPath: LoopDuration
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a88b4f3de493c043902f864d0a7835a, type: 3}
@@ -364,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013252642367075592, guid: 389c10c12e44ac1498a5977bebb811c3, type: 3}
       propertyPath: RanomizationIterationCount
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6013252642367075592, guid: 389c10c12e44ac1498a5977bebb811c3, type: 3}
       propertyPath: CameraEntShowroomController
@@ -420,7 +408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013252642367075703, guid: 389c10c12e44ac1498a5977bebb811c3, type: 3}
       propertyPath: Delay
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6013252642367075703, guid: 389c10c12e44ac1498a5977bebb811c3, type: 3}
       propertyPath: MetaProvider

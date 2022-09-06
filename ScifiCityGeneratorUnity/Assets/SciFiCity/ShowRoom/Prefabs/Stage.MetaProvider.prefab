@@ -64,7 +64,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 1914344001554616683}
   PopulateOnAwake: 0
-  FoundMetas: []
+  FoundMetas:
+  - {fileID: 11400000, guid: 7fe62763915b6e6409b94dfe5801a936, type: 2}
 --- !u!114 &1914344001430901492
 MonoBehaviour:
   m_ObjectHideFlags: 0
