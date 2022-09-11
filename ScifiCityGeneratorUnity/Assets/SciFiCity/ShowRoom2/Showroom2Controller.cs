@@ -20,11 +20,13 @@ public class Showroom2Controller : MonoBehaviour
     private const int XMax = 3;
     private const int ZMax = 3;
     private readonly float[] _targetLevels = new float[XMax*ZMax];
+    private RandomizationCoroutine[] _randCoroutines;
 
     
 
     void Awake()
     {
+        _randCoroutines = GetComponentsInChildren<RandomizationCoroutine>();
         if (RandomizeOnAwake)
         {
             Randomize();
@@ -60,10 +62,7 @@ public class Showroom2Controller : MonoBehaviour
                 var rndMeta = _rnd.FromList(MetaProvider.Metas);
                 var rndChunk = ChunkFactory.CreateChunkRnd(rndMeta, _rnd.GetState(), pivot, pivot.position,
                     ChunkFactory.Positioning.ChunkPivot);
-                //Rows[rowIndex].Chunks[columtIndex] = rndChunk;
-
-                // Randomize chunk
-
+                
                 // Set random level
                 _targetLevels[XMax * z + x] = 0f;
                 if (UseLeveling)
@@ -75,12 +74,19 @@ public class Showroom2Controller : MonoBehaviour
             }
         }
 
+        // Disable pillars
         for (int z = 0; z < ZMax; ++z)
         {
             for (int x = 0; x < XMax; ++x)
             {
                 DisablePillars(x, z);
             }
+        }
+
+        // Randomize chunk
+        foreach (var c in _randCoroutines)
+        {
+            c.StartRandomization(_rnd.ValueInt());
         }
     }
 
@@ -93,7 +99,13 @@ public class Showroom2Controller : MonoBehaviour
         void DisablePillarIfLower(int neighbourPillarIndex, Pillar pillar)
         {
             var neighborHeight = _targetLevels[neighbourPillarIndex];
-            var needDisable = _targetLevels[XMax * z + x] <= neighborHeight;
+            var needDisable = _targetLevels[XMax * z + x] < neighborHeight;
+
+            if (Mathf.Approximately(neighborHeight, _targetLevels[XMax * z + x]))
+            {
+                needDisable = ((XMax * z + x) % 2 ) == 0;
+            }
+
             if (needDisable)
                 pillar.gameObject.SetActive(false);
         }
