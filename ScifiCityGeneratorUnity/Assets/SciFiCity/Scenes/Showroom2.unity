@@ -576,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MetaProvider: {fileID: 593214901}
   Seed: -1
-  UseLeveling: 0
+  UseLeveling: 1
   Levels:
   - 9
   - 6
@@ -592,7 +592,8 @@ MonoBehaviour:
   - {fileID: 957429316}
   - {fileID: 1999435524}
   - {fileID: 1854955848}
-  RandomizeOnAwake: 1
+  RandomizeOnStart: 1
+  OneShowcaseDuration: 8
 --- !u!1 &957429315
 GameObject:
   m_ObjectHideFlags: 0
@@ -9273,7 +9274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &6555414119289728986
 MeshFilter:
   m_ObjectHideFlags: 0

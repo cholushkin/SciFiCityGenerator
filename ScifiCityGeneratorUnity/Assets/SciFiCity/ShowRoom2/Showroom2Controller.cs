@@ -14,30 +14,39 @@ public class Showroom2Controller : MonoBehaviour
     public bool UseLeveling;
     public float[] Levels;
     public Transform[] Pivots;
-    public bool RandomizeOnAwake;
+    public bool RandomizeOnStart;
+    public float OneShowcaseDuration;
 
     private IPseudoRandomNumberGenerator _rnd;
     private const int XMax = 3;
     private const int ZMax = 3;
     private readonly float[] _targetLevels = new float[XMax*ZMax];
     private RandomizationCoroutine[] _randCoroutines;
+    private float _duration;
 
-    
 
-    void Awake()
+  void Start()
     {
         _randCoroutines = GetComponentsInChildren<RandomizationCoroutine>();
-        if (RandomizeOnAwake)
+        if (RandomizeOnStart)
         {
+            _duration = OneShowcaseDuration;
             Randomize();
         }
     }
 
     void Update()
     {
+        _duration -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Randomize();
+        }
+
+        if (_duration < 0f && IsAnimationOfRandomizationFinished())
+        {
+            Randomize();
+            _duration = OneShowcaseDuration;
         }
     }
 
@@ -88,6 +97,18 @@ public class Showroom2Controller : MonoBehaviour
         {
             c.StartRandomization(_rnd.ValueInt());
         }
+    }
+
+    private bool IsAnimationOfRandomizationFinished()
+    {
+        foreach (var c in _randCoroutines)
+        {
+            if (c.IsRunning())
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private void DisablePillars(int x, int z)

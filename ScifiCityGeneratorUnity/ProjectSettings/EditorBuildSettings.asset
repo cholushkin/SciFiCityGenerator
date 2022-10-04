@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SciFiCity/Scenes/Showroom2.unity
+    guid: d85a9d3aa389f694ab6512a64e21012f
   m_configObjects: {}
