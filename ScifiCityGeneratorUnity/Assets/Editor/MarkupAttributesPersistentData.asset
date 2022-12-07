@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0d25574c33ac64d98db1c615ce7ff9, type: 3}
+  m_Name: MarkupAttributesPersistentData
+  m_EditorClassIdentifier: 
+  serializedBoolEntries:
+  - key: MarkupAttributes.Samples.BoxSample/Labeled Box
+    value: 1
+  - key: MarkupAttributes.Samples.BoxSample/Unlabeled Box
+    value: 1
+  - key: MarkupAttributes/BoxSample/Labeled Box
+    value: 1
+  - key: MarkupAttributes/BoxSample/Unlabeled Box
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/First Group
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/First Group/Nested Group 1
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/First Group/Nested Group 2
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/Second Group
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/Second Group/Nested Group 1
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/Second Group/Nested Group 2
+    value: 1
+  - key: MarkupAttributes.Samples.NestingSample/Third Group
+    value: 1
+  - key: MarkupAttributes.Samples.TitleGroupSample/Title Group
+    value: 1
+  - key: MarkupAttributes.Samples.TitleGroupSample/Title Group With A Content Box
+    value: 1
+  - key: MarkupAttributes/TitleGroup/Title Group
+    value: 1
+  - key: MarkupAttributes/TitleGroup/Title Group With A Box
+    value: 1
+  - key: MarkupAttributes.Samples.FoldoutSample/Foldout In A Box
+    value: 0
+  - key: MarkupAttributes.Samples.FoldoutSample/Foldout
+    value: 0
+  - key: MarkupAttributes/FoldoutSample/Foldout In A Box
+    value: 0
+  - key: MarkupAttributes/FoldoutSample/Foldout
+    value: 0
+  - key: MarkupAttributes.Samples.TabsSample/Tab Scope
+    value: 0
+  - key: MarkupAttributes/TabsSample/Tab Scope
+    value: 0
+  - key: MarkupAttributes.Samples.HorizontalAndVerticalSample/Split/Left
+    value: 1
+  - key: MarkupAttributes.Samples.HorizontalAndVerticalSample/Split/Right
+    value: 1
+  - key: MarkupAttributes/HorizontalAndVerticalSample/Split/Left
+    value: 1
+  - key: MarkupAttributes/HorizontalAndVerticalSample/Split/Right
+    value: 1
+  - key: MarkupAttributes.Samples.ToggleGroupSample/Toggle Group
+    value: 1
+  - key: MarkupAttributes.Samples.ToggleGroupSample/Foldable Toggle Group
+    value: 0
+  - key: MarkupAttributes/ToggleGroupSample/Toggle Group
+    value: 1
+  - key: MarkupAttributes/ToggleGroupSample/Toggle Group With Keyword
+    value: 0
+  - key: MarkupAttributes.Samples.MarkedUpFieldSample/No Control
+    value: 1
+  - key: MarkupAttributes.Samples.SomeSerializedStruct//Enabled If Boolean
+    value: 1
+  - key: MarkupAttributes.Samples.InlineEditorSample/Stripped
+    value: 1
+  - key: MarkupAttributes.Samples.CustomizedInspector/Split/Left
+    value: 1
+  - key: MarkupAttributes.Samples.CustomizedInspector/Split/Right
+    value: 1
+  - key: MarkupAttributes/CustomizedShaderGUI/Split/Left
+    value: 1
+  - key: MarkupAttributes/CustomizedShaderGUI/Split/Right
+    value: 1
+  serializedIntEntries: []

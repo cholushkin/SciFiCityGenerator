@@ -594,6 +594,7 @@ MonoBehaviour:
   - {fileID: 1854955848}
   RandomizeOnStart: 1
   OneShowcaseDuration: 8
+  IsDrawDebugInfo: 1
 --- !u!1 &957429315
 GameObject:
   m_ObjectHideFlags: 0

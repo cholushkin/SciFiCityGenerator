@@ -16,6 +16,7 @@ public class Showroom2Controller : MonoBehaviour
     public Transform[] Pivots;
     public bool RandomizeOnStart;
     public float OneShowcaseDuration;
+    public bool IsDrawDebugInfo;
 
     private IPseudoRandomNumberGenerator _rnd;
     private const int XMax = 3;
@@ -71,7 +72,9 @@ public class Showroom2Controller : MonoBehaviour
                 var rndMeta = _rnd.FromList(MetaProvider.Metas);
                 var rndChunk = ChunkFactory.CreateChunkRnd(rndMeta, _rnd.GetState(), pivot, pivot.position,
                     ChunkFactory.Positioning.ChunkPivot);
-                
+                if (IsDrawDebugInfo)
+                    rndChunk.AddComponent<ChunkControllerDebug>();
+
                 // Set random level
                 _targetLevels[XMax * z + x] = 0f;
                 if (UseLeveling)
