@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1796309803629824696, guid: 4c6007e042cfff94aa68dd20aecd1056, type: 3}
+      propertyPath: Seed
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2637875067198475115, guid: 4c6007e042cfff94aa68dd20aecd1056, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -199,7 +203,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChunkController: {fileID: 1756902407}
   InitOnAwake: 1
-  IsDrawTree: 0
+  IsDrawTree: 1
+  TreeText: 
   IsDrawSuppressionLabels: 0
   IsDrawInductionLabels: 0
 --- !u!114 &1756902407 stripped
